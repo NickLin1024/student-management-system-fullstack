@@ -5,13 +5,13 @@ bezkoder:
         jwtExpirationMs: 86400000
         jwtSecret: bezKoderSecretKey
 server:
-    port: 9090
+    port: 8080
 spring:
     datasource:
-        driver-class-name: org.sqlite.JDBC
-        password: admin
-        url: jdbc:sqlite:/teach/java2/java.db
-        username: admin
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/java_db?useUnicode=true&characterEncoding=utf-8&useSSL=true&jdbcCompliantTruncation=false
+        username: root
+        password: 123456
     http:
         encoding:
             charset: UTF-8
