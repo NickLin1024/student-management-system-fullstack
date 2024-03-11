@@ -1,0 +1,30 @@
+attach:
+    folder: /teach/java2/
+bezkoder:
+    app:
+        jwtExpirationMs: 86400000
+        jwtSecret: bezKoderSecretKey
+server:
+    port: 9090
+spring:
+    datasource:
+        driver-class-name: org.sqlite.JDBC
+        password: admin
+        url: jdbc:sqlite:/teach/java2/java.db
+        username: admin
+    http:
+        encoding:
+            charset: UTF-8
+            enabled: true
+            force: true
+    jmx:
+        enabled: false
+    jpa:
+        database-platform: org.fatmansoft.teach.sqlite.SQLDialect
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+    servlet:
+        multipart:
+            max-file-size: 50MB
+            max-request-size: 50MB
