@@ -20,7 +20,7 @@ spring:
     jmx:
         enabled: false
     jpa:
-        database-platform: org.fatmansoft.teach.sqlite.SQLDialect
+        database-platform: org.hibernate.dialect.MySQL8Dialect
         generate-ddl: true
         hibernate:
             ddl-auto: update
